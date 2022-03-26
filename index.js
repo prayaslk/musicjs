@@ -43,7 +43,7 @@ app.get('/', (req ,res) => {
 app.listen(port, () => {
   console.log(`Server listening at https://localhost/${port}`)
 })
-client.login(require("./botconfig/config.json").token);
+client.login(process.env.TOKEN);
 /**
   * @INFO
   * Bot Coded by Tomato#6966 | https://github.com/Tomato6966/Discord-Js-Handler-Template
